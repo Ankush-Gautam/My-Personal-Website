@@ -24,6 +24,17 @@
 	--color-text: var(--color-light);
 
 	--color-para: #d1ccc0;
+	animation: theme-anime 300ms;
+}
+
+@keyframes theme-anime {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 /* --------------------------
@@ -169,8 +180,6 @@ body {
 
 	background: var(--color-background);
 	color: var(--color-text);
-
-	transition: background 300ms ease;
 }
 
 h1 {
@@ -506,7 +515,6 @@ section {
 
 .portfolio {
 	margin: 16rem 0;
-
 	background: var(--color-primary);
 	position: relative;
 }
@@ -569,8 +577,47 @@ section {
 	justify-content: space-between;
 }
 
-.portfolio-container p {
+.portfolio__rightside__personal-details p,
+.portfolio__rightside__education-details p,
+.portfolio__rightside__experience-details p {
 	color: var(--color-background);
+}
+
+.portfolio__rightside__personal-details__intro .myname {
+	font-family: var(--font-head);
+	font-size: 5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	line-height: 0.8;
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+
+.accent-dark {
+	color: var(--color-text);
+}
+
+.portfolio__rightside__personal-details__intro .job {
+	text-transform: uppercase;
+	font-size: 2rem;
+	letter-spacing: 0.9rem;
+}
+.portfolio__rightside__personal-details__address p {
+	margin-bottom: 1rem;
+}
+
+.subtitle {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	margin: 2rem 0;
+}
+
+.college,
+.work {
+	display: grid;
+	grid-template-columns: 40% 60%;
 }
 
 /* --------------------------
