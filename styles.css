@@ -166,6 +166,11 @@ select {
 	align-items: center;
 }
 
+.strong {
+	font-size: 1.7rem;
+	font-weight: 700;
+}
+
 /* --------------------------
     TYPOGRAPHY
  ---------------------------- */
@@ -514,16 +519,25 @@ section {
  ---------------------------- */
 
 .portfolio {
-	margin: 16rem 0;
-	background: var(--color-primary);
+	margin: 10rem 0;
+	background: linear-gradient(
+		45deg,
+		crimson,
+		rgb(238, 42, 81),
+		var(--color-primary)
+	);
 	position: relative;
 }
 
 .portfolio__wrapper {
-	display: grid;
-	grid-template-columns: 40% 60%;
+	display: flex;
+	/* grid-template-columns: 40% 60%; */
+	align-items: center;
+	justify-content: space-between;
+	gap: 5rem;
 	color: var(--color-background);
 	padding: 2rem 0;
+	max-height: 105vh;
 }
 
 .portfolio i {
@@ -535,6 +549,7 @@ section {
 	background: var(--color-text);
 	color: var(--color-background);
 	max-width: 40rem;
+	max-height: 130vh;
 	padding: 2rem;
 	border-radius: 1rem;
 
@@ -542,10 +557,6 @@ section {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	/* position: absolute;
-	top: -40%;
-
-	margin-bottom: 40rem; */
 }
 
 .portfolio__aside i,
@@ -618,6 +629,7 @@ section {
 .work {
 	display: grid;
 	grid-template-columns: 40% 60%;
+	margin-bottom: 2rem;
 }
 
 /* --------------------------
