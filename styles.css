@@ -762,6 +762,7 @@ section {
 	.articles-container {
 		flex-direction: column;
 		gap: 40px;
+		margin-bottom: 0;
 	}
 	.articles-cards {
 		position: static;
@@ -776,6 +777,11 @@ section {
 	.progress-card {
 		flex-direction: column;
 		gap: 0;
+	}
+
+	/* my projects  */
+	.section-title {
+		padding-top: 2rem;
 	}
 
 	/* portfolio section  */
@@ -793,6 +799,11 @@ section {
 
 	.footer__permalinks {
 		display: none;
+	}
+
+	.footer__terms-conditions ul {
+		text-align: center;
+		padding: 0;
 	}
 
 	.footer__copyright {
