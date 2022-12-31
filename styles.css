@@ -806,6 +806,10 @@ section {
 		padding: 0;
 	}
 
+	.footer__message-me input {
+		width: 51%;
+	}
+
 	.footer__copyright {
 		text-align: center;
 	}
