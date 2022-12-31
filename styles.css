@@ -768,6 +768,36 @@ section {
 		display: block;
 		max-width: 100%;
 	}
+
+	/* skills progress  */
+	.my-skills {
+		flex-direction: column;
+	}
+	.progress-card {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	/* portfolio section  */
+
+	.portfolio__rightside {
+		display: none;
+		position: static;
+	}
+
+	/* footer  */
+	.footer__wrapper {
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.footer__permalinks {
+		display: none;
+	}
+
+	.footer__copyright {
+		text-align: center;
+	}
 }
 
 /* for tablets and small laptops  */
