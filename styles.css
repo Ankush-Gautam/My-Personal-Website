@@ -280,7 +280,6 @@ button:active {
 	background: var(--color-background);
 	position: sticky;
 	top: 0;
-
 	z-index: 999;
 }
 
@@ -723,10 +722,9 @@ section {
 	}
 	/* header  */
 
-	.nav-container {
+	.header__nav-container {
 		display: flex;
 		flex-direction: row;
-		position: relative;
 	}
 
 	#open-menu {
@@ -747,10 +745,6 @@ section {
 		padding: 6rem 3rem 5rem 10rem;
 		height: 100vh;
 
-		position: absolute;
-		top: 72%;
-		right: 0;
-
 		box-shadow: 0 1rem 0.5rem 0 var(--color-text);
 	}
 	/* hero section  */
@@ -761,6 +755,17 @@ section {
 	}
 
 	.hero-rightside img {
+		display: none;
+	}
+
+	/* article section  */
+	.articles-container {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.articles-cards {
+		position: static;
+		display: block;
 		max-width: 100%;
 	}
 }
