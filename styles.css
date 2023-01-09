@@ -115,11 +115,6 @@ body {
 	line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-}
-
 /* Make images easier to work with */
 img,
 picture {
@@ -355,112 +350,12 @@ ul li a {
 }
 
 /* --------------------------
-  ARTICLES
- ---------------------------- */
-section {
-	margin: 8rem auto;
-}
-
-.articles {
-	background: var(--color-primary);
-}
-
-.articles-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5rem 0;
-
-	color: var(--color-light);
-
-	position: relative;
-	margin-bottom: 24rem;
-}
-
-.articles-container .btn {
-	box-shadow: unset;
-	background-color: var(--color-light);
-	color: var(--color-dark);
-}
-
-.articles-intro {
-	max-width: 30rem;
-}
-
-.articles-intro p {
-	color: var(--color-light);
-	margin: 2rem 0;
-}
-
-.articles-cards {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-
-	position: absolute;
-	max-width: 70%;
-	right: 0;
-	top: 10%;
-}
-
-.card {
-	background: var(--color-text);
-	color: var(--color-background);
-	padding: 2rem 1rem;
-	margin: 0 0 1rem 1rem;
-	border-radius: 1rem;
-}
-
-.card:hover {
-	opacity: 0.9;
-}
-
-.card .title {
-	margin: 0;
-	margin-bottom: 1rem;
-	font-weight: 700;
-}
-
-.card p {
-	font-size: 1rem;
-	line-height: 1.8;
-	color: var(--color-background);
-}
-
-.card i {
-	color: #fff;
-	border-radius: 50%;
-	font-size: 1.6rem;
-	padding: 1rem;
-	text-align: center;
-	margin-bottom: 1rem;
-}
-
-/* styling icons background colorful  */
-.card:nth-child(1) i {
-	background: rgb(247, 190, 69);
-}
-.card:nth-child(2) i {
-	background: rgb(0, 206, 144);
-}
-.card:nth-child(3) i {
-	background: rgb(163, 106, 255);
-}
-.card:nth-child(4) i {
-	background: rgb(55, 116, 248);
-}
-.card:nth-child(5) i {
-	background: rgb(236, 40, 57);
-}
-.card:nth-child(6) i {
-	background: rgb(253, 68, 154);
-}
-
-/* --------------------------
   SKILLS PROGRESS
  ---------------------------- */
 
 .my-skills {
 	display: flex;
+	padding: 2rem 0;
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -758,18 +653,6 @@ section {
 		display: none;
 	}
 
-	/* article section  */
-	.articles-container {
-		flex-direction: column;
-		gap: 40px;
-		margin-bottom: 0;
-	}
-	.articles-cards {
-		position: static;
-		display: block;
-		max-width: 100%;
-	}
-
 	/* skills progress  */
 	.my-skills {
 		flex-direction: column;
@@ -784,7 +667,15 @@ section {
 		padding-top: 2rem;
 	}
 
+	.projects-placeholder {
+		padding: 2rem;
+	}
+
 	/* portfolio section  */
+
+	.portfolio__wrapper {
+		justify-content: center;
+	}
 
 	.portfolio__rightside {
 		display: none;
@@ -827,5 +718,23 @@ section {
 
 	.hero-rightside img {
 		max-width: 100%;
+	}
+
+	.portfolio__wrapper .myname {
+		font-size: 3rem;
+	}
+	.portfolio__aside {
+		padding: 1rem;
+	}
+
+	.portfolio__wrapper {
+		height: auto;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+	.portfolio__rightside p {
+		font-size: 2px;
 	}
 }

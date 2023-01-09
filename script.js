@@ -21,21 +21,21 @@ darkBtn.addEventListener('click', () => {
 })
 
 // HAMBURGER MENU 
-const openBtn = document.getElementById('open-menu')
-const closeBtn = document.getElementById('close-menu')
-const nav = document.getElementById("nav")
+// const openBtn = document.getElementById('open-menu')
+// const closeBtn = document.getElementById('close-menu')
+// const nav = document.getElementById("nav")
 
-openBtn.addEventListener('click', () => {
-  openBtn.style.display = "none";
-  closeBtn.style.display = "inline-block"
-  nav.style.display = "block"
-})
+// openBtn.addEventListener('click', () => {
+//   openBtn.style.display = "none";
+//   closeBtn.style.display = "inline-block"
+//   nav.style.display = "block"
+// })
 
-closeBtn.addEventListener('click', () => {
-  closeBtn.style.display = "none";
-  openBtn.style.display = "inline-block"
-  nav.style.display = "none"
-})
+// closeBtn.addEventListener('click', () => {
+//   closeBtn.style.display = "none";
+//   openBtn.style.display = "inline-block"
+//   nav.style.display = "none"
+// })
 
 
 //PROGRESS BAR - SKILLS
