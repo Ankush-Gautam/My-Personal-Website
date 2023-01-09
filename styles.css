@@ -390,11 +390,13 @@ ul li a {
 /* --------------------------
   MY  PROJECTS
  ---------------------------- */
+
 .my-projects {
 	margin: 7rem auto;
 	padding: 2rem;
 	border-radius: 1rem;
-
+	position: relative;
+	text-align: center;
 	color: var(--color-background);
 	background: var(--color-text);
 }
@@ -404,8 +406,53 @@ ul li a {
 .projects-placeholder p {
 	color: var(--color-background);
 }
-.my-projects h2 {
-	margin-bottom: 5rem;
+.my-projects h2,
+.my-projects h3 {
+	margin-bottom: 4rem;
+}
+
+.my-projects a {
+	color: royalblue;
+	text-decoration: underline;
+	padding-top: 2rem;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-pagination,
+.swiper-button-prev,
+.swiper-button-next {
+	color: var(--color-light);
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	padding: 2rem;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* --------------------------
