@@ -356,6 +356,7 @@ ul li a {
 .my-skills {
 	display: flex;
 	padding: 2rem 0;
+	margin-bottom: 10rem;
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -391,7 +392,7 @@ ul li a {
   MY  PROJECTS
  ---------------------------- */
 
-.my-projects {
+.projects {
 	margin: 7rem auto;
 	padding: 2rem;
 	border-radius: 1rem;
@@ -400,18 +401,19 @@ ul li a {
 	color: var(--color-background);
 	background: var(--color-text);
 }
-.projects-placeholder {
+.projects {
 	margin: 0 auto;
 }
-.projects-placeholder p {
+.projects p {
 	color: var(--color-background);
+	padding: 0 2rem;
 }
-.my-projects h2,
-.my-projects h3 {
+.projects h2,
+.projects h3 {
 	margin-bottom: 4rem;
 }
 
-.my-projects a {
+.projects a {
 	color: royalblue;
 	text-decoration: underline;
 	padding-top: 2rem;
@@ -422,10 +424,10 @@ ul li a {
 	height: 100%;
 }
 
-.swiper-pagination,
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev i,
+.swiper-button-next i {
 	color: var(--color-light);
+	font-size: 3rem;
 }
 
 .swiper-slide {
@@ -713,8 +715,12 @@ ul li a {
 	.section-title {
 		padding-top: 2rem;
 	}
-
-	.projects-placeholder {
+	/* .swiper p {
+		font-size: 14px;
+		padding: 0 2rem;
+	} */
+	.projects {
+		border-radius: 0;
 		padding: 2rem;
 	}
 
@@ -744,6 +750,9 @@ ul li a {
 		padding: 0;
 	}
 
+	.footer__message-me p {
+		margin: 2rem 0;
+	}
 	.footer__message-me input {
 		width: 51%;
 	}
@@ -767,6 +776,11 @@ ul li a {
 		max-width: 100%;
 	}
 
+	.projects {
+		padding: 2rem;
+		border-radius: 0;
+	}
+
 	.portfolio__wrapper .myname {
 		font-size: 3rem;
 	}
@@ -782,6 +796,6 @@ ul li a {
 		font-size: 2rem;
 	}
 	.portfolio__rightside p {
-		font-size: 2px;
+		font-size: 14px;
 	}
 }
